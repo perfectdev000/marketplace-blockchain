@@ -58,7 +58,8 @@ body {
           font-weight: 600;
         }
       }
-      .rc-tabs-tab-active{        
+      .rc-tabs-tab-active{
+        background-color: transparent !important;
         border-bottom: 4px solid rgb(68, 68, 226);        
         padding-bottom: 6px;
         color: white;

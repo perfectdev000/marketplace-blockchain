@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import Tabs, { TabPane } from 'rc-tabs';
-import Dashboard from '../components/dashboard';
+import Dashboard from '../components/dashboard/dashboard';
 
 const tab_icon1 = 
         <div className='flex items-center px-6'>
