@@ -6,11 +6,63 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.main-container{
+  background-color: #242735;
+  .menu-tabs{
+    .rc-tabs{
+      width: 100% !important;      
+      .rc-tabs-nav-list{
+        margin-left: 100px;
+        display: flex !important;
+        height: 52px;
+        .rc-tabs-tab{
+          height: 52px;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+        }
+        .rc-tabs-tab-active{
+          background-color: #242735;
+        }
+      }
+      .rc-tabs-content-holder{
+        width: 100%;
+        .rc-tabs-tabpane-active{
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
-* {
-  box-sizing: border-box;
+.general-tabs{
+  .rc-tabs-nav-wrap{
+    height: 52px;
+    border-bottom: #374151 solid 1px;
+    .rc-tabs-nav-list{
+      margin: 0 !important;
+      // padding-top: 4px;
+      display: flex !important;
+      height: 52px;
+      .rc-tabs-tab{        
+        height: 48px;
+        width: 90px ;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        cursor: pointer;
+        color: gray;
+        .rc-tabs-tab-btn{
+          width: 100%;
+          text-align: center;
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+      .rc-tabs-tab-active{        
+        border-bottom: 4px solid rgb(68, 68, 226);        
+        padding-bottom: 6px;
+        color: white;
+      }
+    }
+  }
 }

@@ -22,10 +22,6 @@ module.exports = {
           DEFAULT: '#6B21A8',
         },        
       },
-      width:{
-        '300':'300px',
-        '400':'400px',
-      }
     },
     bottom: {
       0: 0,
