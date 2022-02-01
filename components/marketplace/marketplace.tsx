@@ -1,6 +1,6 @@
 import Tabs, { TabPane } from 'rc-tabs';
 import Image from 'next/image';
-
+import AxiesFilter from './AxiesFilter';
 const tab_axies=<div className='flex items-center justify-center'>
             <Image src="/assets/img/tab-axie.png" width={24} height={24}/>
             <div className='ml-2'>Axies</div>
@@ -24,9 +24,7 @@ const Recently = (props:any) => {
         <div className="general-tabs">
           <Tabs defaultActiveKey="1" >
             <TabPane tab= {tab_axies} key="1">
-              <div className='w-[100vw] h-[655px] relative'>
-                <Image src={'/assets/img/Screenshot_3.png'} layout='fill'/>    
-              </div>              
+              <AxiesFilter/>
             </TabPane>
             <TabPane tab= {tab_land} key="2">
               <div className='w-[100vw] h-[655px] relative'>

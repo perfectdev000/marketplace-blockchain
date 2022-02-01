@@ -46,7 +46,7 @@ const Home: NextPage = () => {
         <p className='ml-2 mb-1 text-base'>Login</p>
       </button>
       
-      <div className='menu-tabs absolute top-0 left-0 text-white'>
+      <div className='menu-tabs absolute top-0 left-0 text-white min-h-[100vh]'>
         <Tabs defaultActiveKey="1" onChange={callback}>
           <TabPane tab= {tab_icon1} key="1">
             <Dashboard/>
