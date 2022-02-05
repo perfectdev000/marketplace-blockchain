@@ -10,8 +10,8 @@ const ImgBtn = (props:any) =>{
 
   return(
     <>
-      <div className="px-3 py-1 rounded-md bg-gray-700 m-1 text-14 hover:cursor-pointer hover:bg-gray-600 flex items-center"
-        style={{backgroundColor:pressed?'#7777ee':'#3a3f50'}}
+      <div className="px-2 py-1 rounded-md bg-gray-700 m-1 text-12 hover:cursor-pointer hover:bg-gray-600 flex items-center"
+        style={{backgroundColor:pressed?'#046cfc':'#3a3f50'}}
         onClick={()=>setPressed(!pressed)}
       >
         <Image src={'/assets/img/'+ btnNum +'.png'} width={15} height={15} />        

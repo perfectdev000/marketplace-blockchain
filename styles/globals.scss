@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Poppins, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 .main-container{
@@ -46,7 +46,7 @@ body {
       height: 52px;
       .rc-tabs-tab{        
         height: 48px;
-        width: 95px ;
+        width: 120px ;
         padding-top: 10px;
         padding-bottom: 10px;
         cursor: pointer;
@@ -55,7 +55,7 @@ body {
           width: 100%;
           text-align: center;
           font-size: 14px;
-          font-weight: 600;
+          font-weight: 500;
         }
       }
       .rc-tabs-tab-active{
@@ -86,6 +86,35 @@ body {
   overflow-y: auto;
 }
 
+.Dropdown-root{
+  width: 146px;
+  .Dropdown-control{
+    padding: 4px 30px 4px 10px;
+    background-color: transparent;
+    border-color: gray;
+    .Dropdown-placeholder{
+      color:white;
+    }
+    .Dropdown-arrow-wrapper{
+      align-items: center;
+    }
+  }
+  .Dropdown-menu{
+    overflow: visible;
+    border: 0px solid black;
+    border-radius: 5px;
+    background-color: black;
+    .Dropdown-option{
+      color:white;
+      &:hover{
+        background-color: #374151;
+      }      
+    }
+    .is-selected{
+      background-color: #374151;
+    }
+  }
+}
 
 /* width */
 ::-webkit-scrollbar {

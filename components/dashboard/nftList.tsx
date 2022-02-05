@@ -5,7 +5,7 @@ const NftList = (props:any) => {
   const [listItems, setListItems] = useState(props.items)
   return (
     <>      
-      {listItems.map((item: { id: any; }) => <Item key={item.id} data={item} />)}      
+      {listItems.map((item: { id: any; }) => <Item key={item.id} data={item} />)}
     </>
   )
 }

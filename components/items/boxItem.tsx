@@ -14,7 +14,7 @@ const boxItem = (props:any) => {
 
           <div className="text-gray-300 font-normal px-4">
             <div>
-              <div className="flex justify-center text-14 font-semibold text-white">
+              <div className="flex justify-center text-14 font-medium text-white">
                 {props.data.id%3+1}X Reward
               </div>
               <div className="flex justify-center">
