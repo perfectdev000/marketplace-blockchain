@@ -6,19 +6,19 @@ import ItemList from './itemList';
 import BoxList from './boxList';
 
 const tab_axies=<div className='flex items-center justify-center'>
-            <Image src="/assets/img/tab-axie.png" width={24} height={24}/>
+            <Image src="/assets/img/tab-axie.png" width={24} height={24} alt="image"/>
             <div className='ml-2'>Pokemon</div>
           </div>
 const tab_land=<div className='flex items-center justify-center'>
-            <Image src="/assets/img/tab-land.png" width={24} height={24}/>
+            <Image src="/assets/img/tab-land.png" width={24} height={24} alt="image"/>
             <div className='ml-2'>Land</div>
           </div>
 const tab_items=<div className='flex items-center justify-center'>
-            <Image src="/assets/img/tab-item.png" width={24} height={24}/>
+            <Image src="/assets/img/tab-item.png" width={24} height={24} alt="image"/>
             <div className='ml-2'>Items</div>
           </div>
 const tab_bundles=<div className='flex items-center justify-center'>
-            <Image src="/assets/img/tab-bundle.png" width={24} height={24}/>
+            <Image src="/assets/img/tab-bundle.png" width={24} height={24} alt="image"/>
             <div className='ml-2'>PokeBoxes</div>
           </div>
 const Recently = (props:any) => {

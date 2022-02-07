@@ -1,11 +1,10 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Item from '../items/boxItem'
 
 const boxList = (props:any) => {
-  const [listItems, setListItems] = useState(props.items)
   return (
     <>      
-      {listItems.map((item: { id: any; }) => <Item key={item.id} data={item} />)}      
+      {props.items.map((item: { id: any; }) => <Item key={item.id} data={item} />)}      
     </>
   )
 }

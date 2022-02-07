@@ -22,19 +22,19 @@ var items = [
   { id:12, name: 'Charmander', type:4, price: 0.32, rarity: 0.04, resellable:true, count:9 },
 ];
 const tab_axies=<div className='flex items-center justify-center'>
-            <Image src="/assets/img/tab-axie.png" width={24} height={24}/>
+            <Image src="/assets/img/tab-axie.png" width={24} height={24} alt="image"/>
             <div className='ml-2'>Pokemons</div>
           </div>
 const tab_land=<div className='flex items-center justify-center'>
-            <Image src="/assets/img/tab-land.png" width={24} height={24}/>
+            <Image src="/assets/img/tab-land.png" width={24} height={24} alt="image"/>
             <div className='ml-2'>Land</div>
           </div>
 const tab_items=<div className='flex items-center justify-center'>
-            <Image src="/assets/img/tab-item.png" width={24} height={24}/>
+            <Image src="/assets/img/tab-item.png" width={24} height={24} alt="image"/>
             <div className='ml-2'>Items</div>
           </div>
 const tab_bundles=<div className='flex items-center justify-center'>
-            <Image src="/assets/img/tab-bundle.png" width={24} height={24}/>
+            <Image src="/assets/img/tab-bundle.png" width={24} height={24} alt="image"/>
             <div className='ml-2'>PokeBoxes</div>
           </div>
 const Recently = (props:any) => {
@@ -48,17 +48,17 @@ const Recently = (props:any) => {
             </TabPane>
             <TabPane tab= {tab_bundles} key="2">
               <div className='w-[100vw] h-[655px] relative'>
-                <Image src={'/assets/img/Screenshot_6.png'} layout='fill'/>    
+                <Image src={'/assets/img/Screenshot_6.png'} layout='fill' alt='image'/>    
               </div>              
             </TabPane>
             <TabPane tab= {tab_land} key="3">
               <div className='w-[100vw] h-[655px] relative'>
-                <Image src={'/assets/img/Screenshot_4.png'} layout='fill'/>    
+                <Image src={'/assets/img/Screenshot_4.png'} layout='fill' alt='image'/>    
               </div>              
             </TabPane>
             <TabPane tab= {tab_items} key="4">
               <div className='w-[100vw] h-[655px] relative'>
-                <Image src={'/assets/img/Screenshot_5.png'} layout='fill'/>    
+                <Image src={'/assets/img/Screenshot_5.png'} layout='fill' alt='image'/>    
               </div>              
             </TabPane>
           </Tabs>

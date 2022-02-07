@@ -14,7 +14,7 @@ const ImgBtn = (props:any) =>{
         style={{backgroundColor:pressed?'#046cfc':'#3a3f50'}}
         onClick={()=>setPressed(!pressed)}
       >
-        <Image src={'/assets/img/'+ btnNum +'.png'} width={15} height={15} />        
+        <Image src={'/assets/img/'+ btnNum +'.png'} width={15} height={15} alt="image"/>        
         <div className="ml-1">{props.name}</div>
       </div>
     </>
