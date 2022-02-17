@@ -1,8 +1,8 @@
 import Image from "next/image"
 
 const color = ['#FFFFE0', '#9932CC', '#00BFFF', '#ADFF2F']
-const m_item = [
-  <div >
+
+const m_item1 = <div>
     <div className="w-full flex items-center">
       <div className="flex mx-1">
         <svg width="32" height="32" viewBox="0 0 32 32">
@@ -19,9 +19,9 @@ const m_item = [
         </svg>
       </div>
     </div>
-  </div>,
+  </div>
 
-  <div >
+const m_item2 =  <div >
     <div className="w-full flex items-center">
       <div className="flex-0 mx-1">
         <svg width="32" height="32" viewBox="0 0 32 32">
@@ -41,7 +41,7 @@ const m_item = [
       </div>
     </div>
   </div>
-]
+
 const nftItem = (props:any) => {
   
   return (
@@ -69,12 +69,12 @@ const nftItem = (props:any) => {
 
           <div className="mx-1">
             <div className="flex">
-              {m_item[0]}
-              {m_item[1]}
-              {m_item[0]}
-              {m_item[1]}
-              {m_item[0]}
-              {m_item[1]}
+              {m_item1}
+              {m_item2}
+              {m_item1}
+              {m_item2}
+              {m_item1}
+              {m_item2}
             </div>
             <div className="flex w-full justify-between">
               <div className="">
