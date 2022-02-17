@@ -11,7 +11,7 @@ const ExpandDiv = (props:any) => {
   
   const [close, setClose] = useState(false)
   const [isSlideValue, setSlideValue] = useState([1,10])
-  const [tokens, setTokens] = useState(0)
+  
   const btnStyle0 = { transform: 'rotate(0deg)',transition: 'transform 1s' }
   const btnStyle1 = { transform: 'rotate(180deg)', transition: 'transform 1s' }
   const divStyle0 = {overflow: 'hidden', transition: 'max-height 1s', maxHeight: '0px', }
@@ -19,32 +19,9 @@ const ExpandDiv = (props:any) => {
   const title = props.filtertitle
     
   function onChangeSliderValue(value: React.SetStateAction<number[]>) {
-    setSlideValue(value)
-    const initialItems=[...props.items]
-    var temps: any[]=[];
-    initialItems.forEach(function (item) {        
-      if((item.count >= isSlideValue[0]) && (item.count <= isSlideValue[1])){
-        temps.push(item)
-      }
-    });
-    props.filterItems(temps)
+      setSlideValue(value)
   }
-  const selChang = (value:number) =>{
-    setTokens(value)
-    const btnName = value ===1?'Bulbasaur':value === 2?'Lvysaur':value === 3?'Venusaur':'Charmander'     
-    const initialItems=[...props.items]
-    if(value===0)
-      props.filterItems(initialItems)
-    else{
-      var temps: any[]=[];
-      initialItems.forEach(function (item) {        
-        if(item.name === btnName){          
-          temps.push(item)
-        }
-      });
-      props.filterItems(temps)
-    }
-  }
+
   return (
     <>      
       <div className='w-full h-auto'>
@@ -58,10 +35,10 @@ const ExpandDiv = (props:any) => {
           {
             title=='Class'?
               <div className="flex flex-wrap px-4 pb-4">
-                <ImgBtn name='Bulbasaur' value={tokens} selChang={selChang}/>
-                <ImgBtn name='Lvysaur' value={tokens} selChang={selChang}/>
-                <ImgBtn name='Venusaur' value={tokens} selChang={selChang}/>
-                <ImgBtn name='Charmander' value={tokens} selChang={selChang}/>
+                <ImgBtn name='Bulbasaur'/>
+                <ImgBtn name='Lvysaur'/>
+                <ImgBtn name='Venusaur'/>
+                <ImgBtn name='Charmander'/>
               </div>
             :
             title=='Counts'?
