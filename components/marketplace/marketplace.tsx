@@ -1,6 +1,7 @@
-import Tabs, { TabPane } from 'rc-tabs';
-import Image from 'next/image';
-import AxiesFilter from './AxiesFilter';
+import Tabs, { TabPane } from 'rc-tabs'
+import Image from 'next/image'
+import AxiesFilter from './AxiesFilter'
+import PokerBoxFilter from './PokerBoxFilter'
 
 var items = [
   { id:1, name: 'Bulbasaur', type:1, price: 0.21, rarity: 0.12, resellable:true, count:8},
@@ -50,12 +51,10 @@ const MarketPlace = (props:any) => {
             <TabPane tab= {tab_axies} key="1">
               <AxiesFilter items={items}/>
             </TabPane>
-            <TabPane tab= {tab_bundles} key="2">
-              <div className='w-[100vw] h-[655px] relative'>
-                <Image src={'/assets/img/Screenshot_6.png'} layout='fill' alt='image'/>    
-              </div>
+            <TabPane tab= {tab_bundles} key="2">              
+              <PokerBoxFilter items={items}/>
             </TabPane>
-            <TabPane tab= {tab_land} key="3">
+            {/* <TabPane tab= {tab_land} key="3">
               <div className='w-[100vw] h-[655px] relative'>
                 <Image src={'/assets/img/Screenshot_4.png'} layout='fill' alt='image'/>    
               </div>
@@ -64,7 +63,7 @@ const MarketPlace = (props:any) => {
               <div className='w-[100vw] h-[655px] relative'>
                 <Image src={'/assets/img/Screenshot_5.png'} layout='fill' alt='image'/>    
               </div>              
-            </TabPane>
+            </TabPane> */}
           </Tabs>
         </div>
       </div>      
