@@ -16,17 +16,22 @@ const AxiesFilter = (props:any) => {
   }
   return (
     <>      
-      <div className="w-full min-w-[100vw] bg-[#242735] m-0 h-full">         
-        <div className='flex w-full h-full'>
+      <div className="w-full min-w-[100vw] bg-[#242735] m-0" style={{height:'calc(100vh - 106px)'}}>         
+        <div className='relative w-full h-full'>
           <div className='left-part border-r border-gray-700 text-14 text-white font-normal'>
-            <p className='p-5 text-20 font-medium'>Filter</p>
-            <ExpandDiv filtertitle="Class"/>
-            <ExpandDiv filtertitle="Counts"/>
-            <ExpandDiv filtertitle="Purity &amp; Genes"/>
-            <ExpandDiv filtertitle="Stats"/>
-            <ExpandDiv filtertitle="Other"/>
+            <div className="left-content">
+                <p className='p-5 text-20 font-medium'>Filter</p>
+                <ExpandDiv filtertitle="Class"/>
+                <ExpandDiv filtertitle="Counts"/>
+                <ExpandDiv filtertitle="Purity &amp; Genes"/>
+                <ExpandDiv filtertitle="Stats"/>
+                <ExpandDiv filtertitle="Other"/>
+            </div>
+            <div className="left-button w-full pt-4">
+              <img src="assets/img/search.png" className="mx-auto"></img>
+            </div>
           </div>
-          <div className='right-part'>
+          <div className='right-part text-white'>
               <div className='px-8 py-6'>
                 <div className="right-top flex justify-between items-center">
                   <div className="text-20 font-medium">

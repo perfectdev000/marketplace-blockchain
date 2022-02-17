@@ -2,8 +2,10 @@
 html,
 body {
   padding: 0;
-  margin: 0;
+  margin: 0;  
+  background-color: #242735;
   font-family: Poppins, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-x: hidden;
 }
 
 .main-container{
@@ -37,18 +39,17 @@ body {
 
 .general-tabs{
   .rc-tabs-nav-wrap{
-    height: 52px;
+    padding-top: 5px;
     border-bottom: #374151 solid 1px;
     .rc-tabs-nav-list{
       margin: 0 !important;
-      // padding-top: 4px;
-      display: flex !important;
-      height: 52px;
+      padding-bottom: 0px !important;
+      display: flex !important;      
       .rc-tabs-tab{        
         height: 48px;
         width: 120px ;
         padding-top: 10px;
-        padding-bottom: 10px;
+        // padding-bottom: 10px;
         cursor: pointer;
         color: gray;
         .rc-tabs-tab-btn{
@@ -60,8 +61,7 @@ body {
       }
       .rc-tabs-tab-active{
         background-color: transparent !important;
-        border-bottom: 4px solid rgb(68, 68, 226);        
-        padding-bottom: 6px;
+        border-bottom: 4px solid rgb(68, 68, 226);
         color: white;
       }
     }
@@ -72,8 +72,8 @@ body {
 }
 
 .left-part{
-  min-height: calc(100vh - 104px);
-  max-height: calc(100vh - 104px);
+  min-height: calc(100vh - 106px);
+  max-height: calc(100vh - 106px);
   min-width: 280px;
   max-width: 280px;
   overflow-y: auto;
@@ -135,4 +135,58 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+.left-part{
+  min-height: calc(100vh - 106px);
+  max-height: calc(100vh - 106px);
+  min-width: 280px;
+  max-width: 280px;
+  background-color: #242735;
+  position: fixed;
+  z-index: 10;
+  margin: 0px;
+}
+.right-part{
+  padding-left: 280px;
+}
+@media only screen and (max-width: 490px) {
+  .item-content{
+    display: inline !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .left-part{
+    min-height: calc(100vh - 106px);
+    max-height: calc(100vh - 106px);
+    min-width: 40px;
+    max-width: 40px;
+    background-color: #242735;
+    position: fixed;
+    z-index: 10;
+    margin: 0px;
+    box-shadow: rgba(255, 254, 254, 0.15) 2.4px 2.4px 3.2px;
+    .left-content{
+      display: none;
+    }
+    .left-button{
+      display: block;
+    }
+  }
+  .left-part:hover{
+    margin: 0px;
+    min-width: 280px;
+    // box-shadow:none;
+    .left-content{
+      display: block;
+    }
+    .left-button{
+      display: none;
+    }
+  }
+  
+  .right-part{
+    padding-left: 40px;
+  }
 }

@@ -4,7 +4,7 @@ import AmountDisplay from './AmountDisplay';
 const Amount = () => {
   return (
     <>
-      <div className="general-tabs w-[1220px] mx-auto rounded-md border border-gray-700">
+      <div className="general-tabs w-min-[100vw] mx-auto rounded-md border border-gray-700">
         <Tabs defaultActiveKey="2" >
           <TabPane tab= "Last 24h" key="1">
             <AmountDisplay sale="37154" volume={1231.8} sold="37086"/>

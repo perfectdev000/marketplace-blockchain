@@ -17,9 +17,11 @@ var items = [
 const Dashboard = () => {
   return (
     <>
-      <div className="min-w-[100vw] px-8 pt-4 bg-[#242735] pb-16">
-        <Amount/>
-        <Recently items={items}/>
+      <div className="w-full sm:w-[500px] md:w-full lg:w-[1026px] mx-auto px-2 py-8 bg-[#242735] text-white">
+        <div>
+          <Amount/>
+          <Recently items={items}/>
+        </div>
       </div>
     </>
   )

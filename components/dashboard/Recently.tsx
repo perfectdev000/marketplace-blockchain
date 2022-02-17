@@ -24,7 +24,7 @@ const tab_bundles=<div className='flex items-center justify-center'>
 const Recently = (props:any) => {
   return (
     <>
-      <div className="w-[1220px] mx-auto mt-8 grid grid-cols-2 gap-4">
+      <div className="w-full mx-auto mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <p className='text-20 font-medium'>Recently listed</p>
           <div className="general-tabs rounded-md border border-gray-700 mt-2">          

@@ -23,24 +23,24 @@ var items = [
 ];
 const tab_axies=<div className='flex items-center justify-center'>
             <Image src="/assets/img/tab-axie.png" width={24} height={24} alt="image"/>
-            <div className='ml-2'>Pokemons</div>
+            <div className='ml-2 hidden md:block'>Pokemons</div>
           </div>
 const tab_land=<div className='flex items-center justify-center'>
             <Image src="/assets/img/tab-land.png" width={24} height={24} alt="image"/>
-            <div className='ml-2'>Land</div>
+            <div className='ml-2 hidden md:block'>Land</div>
           </div>
 const tab_items=<div className='flex items-center justify-center'>
             <Image src="/assets/img/tab-item.png" width={24} height={24} alt="image"/>
-            <div className='ml-2'>Items</div>
+            <div className='ml-2 hidden md:block'>Items</div>
           </div>
 const tab_bundles=<div className='flex items-center justify-center'>
             <Image src="/assets/img/tab-bundle.png" width={24} height={24} alt="image"/>
-            <div className='ml-2'>PokeBoxes</div>
+            <div className='ml-2 hidden md:block'>PokeBoxes</div>
           </div>
 const Recently = (props:any) => {
   return (
     <>      
-      <div className="min-w-[100vw] bg-[#242735] -mt-[24px]">         
+      <div className="min-w-[100vw] bg-[#242735] ">         
         <div className="general-tabs">
           <Tabs defaultActiveKey="1" >
             <TabPane tab= {tab_axies} key="1">
