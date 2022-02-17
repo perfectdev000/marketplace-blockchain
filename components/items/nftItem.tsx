@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const color = ['#FFFFE0', '#9932CC', '#00BFFF', '#ADFF2F']
 const m_item = [
-  <div key={1}>
+  <div >
     <div className="w-full flex items-center">
       <div className="flex mx-1">
         <svg width="32" height="32" viewBox="0 0 32 32">
@@ -21,7 +21,7 @@ const m_item = [
     </div>
   </div>,
 
-  <div key={2}>
+  <div >
     <div className="w-full flex items-center">
       <div className="flex-0 mx-1">
         <svg width="32" height="32" viewBox="0 0 32 32">
@@ -43,7 +43,7 @@ const m_item = [
   </div>
 ]
 const nftItem = (props:any) => {
-  // { id:1, name: 'Bulbasaur', type:1, price: 21, rarity: 0.12, resellable:true, count:8},  
+  
   return (
     <>
       <div className="h-auto p-2 flex justify-between border-b border-gray-700 text-white text-14 font-normal hover:cursor-pointer hover:opacity-50">

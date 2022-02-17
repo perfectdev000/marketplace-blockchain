@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Tabs, { TabPane } from 'rc-tabs'
 import Dashboard from '../components/dashboard/dashboard'
-import MarketPlace from '../components/marketplace/marketplace'
+import Marketplace from '../components/marketplace/marketplace'
 import Link from 'next/link'
 import React, {useState} from 'react'
 
@@ -62,10 +62,11 @@ const Home: NextPage = () => {
         </Tabs>
       </div>
       <div className='h-[52px]'></div>
-      {tabIndex===1?
+      {
+        tabIndex===1?
         <Dashboard/>
         :
-        <MarketPlace/>
+        <Marketplace/>
       }
     </div>
   )
