@@ -5,7 +5,7 @@ import ExpandDiv from "../shared/ExpandDiv"
 import TileItem from "../items/tileItem"
 import ListItem from "../items/listItem";
 
-const AxiesFilter = (props:any) => {
+const PokerBoxFilter = (props:any) => {
   const [showListType, setShowListType] = useState(true)
   const [items, setItems] = useState(props.items)
 
@@ -92,4 +92,4 @@ const AxiesFilter = (props:any) => {
   )
 }
 
-export default AxiesFilter
+export default PokerBoxFilter

@@ -1,6 +1,7 @@
-import Tabs, { TabPane } from 'rc-tabs';
-import Image from 'next/image';
-import AxiesFilter from './AxiesFilter';
+import Tabs, { TabPane } from 'rc-tabs'
+import Image from 'next/image'
+import AxiesFilter from './AxiesFilter'
+import PokerBoxFilter from './PokerBoxFilter'
 
 var items = [
   { id:1, name: 'Bulbasaur', type:1, price: 0.21, rarity: 0.12, resellable:true, count:8},
@@ -21,46 +22,48 @@ var items = [
   { id:11, name: 'Venusaur', type:3, price: 0.17, rarity: 0.02, resellable:false, count:5},
   { id:12, name: 'Charmander', type:4, price: 0.32, rarity: 0.04, resellable:true, count:9 },
 ];
-const tab_axies=<div className='flex items-center justify-center'>
+const tab_axies=
+          <div className='flex items-center justify-center'>
             <Image src="/assets/img/tab-axie.png" width={24} height={24} alt="image"/>
             <div className='ml-2 hidden md:block'>Pokemons</div>
           </div>
-const tab_land=<div className='flex items-center justify-center'>
+const tab_land =
+          <div className='flex items-center justify-center'>
             <Image src="/assets/img/tab-land.png" width={24} height={24} alt="image"/>
             <div className='ml-2 hidden md:block'>Land</div>
           </div>
-const tab_items=<div className='flex items-center justify-center'>
+const tab_items =
+          <div className='flex items-center justify-center'>
             <Image src="/assets/img/tab-item.png" width={24} height={24} alt="image"/>
             <div className='ml-2 hidden md:block'>Items</div>
           </div>
-const tab_bundles=<div className='flex items-center justify-center'>
+const tab_bundles = 
+          <div className='flex items-center justify-center'>
             <Image src="/assets/img/tab-bundle.png" width={24} height={24} alt="image"/>
             <div className='ml-2 hidden md:block'>PokeBoxes</div>
           </div>
-const Recently = (props:any) => {
+const MarketPlace = (props:any) => {
   return (
     <>      
-      <div className="min-w-[100vw] bg-[#242735] ">         
+      <div className="min-w-[100vw] bg-[#242735]" style={{overflowY:'hidden'}}>
         <div className="general-tabs">
           <Tabs defaultActiveKey="1" >
             <TabPane tab= {tab_axies} key="1">
               <AxiesFilter items={items}/>
             </TabPane>
-            <TabPane tab= {tab_bundles} key="2">
-              <div className='w-[100vw] h-[655px] relative'>
-                <Image src={'/assets/img/Screenshot_6.png'} layout='fill' alt='image'/>    
-              </div>              
+            <TabPane tab= {tab_bundles} key="2">              
+              <PokerBoxFilter items={items}/>
             </TabPane>
-            <TabPane tab= {tab_land} key="3">
+            {/* <TabPane tab= {tab_land} key="3">
               <div className='w-[100vw] h-[655px] relative'>
                 <Image src={'/assets/img/Screenshot_4.png'} layout='fill' alt='image'/>    
-              </div>              
+              </div>
             </TabPane>
             <TabPane tab= {tab_items} key="4">
               <div className='w-[100vw] h-[655px] relative'>
                 <Image src={'/assets/img/Screenshot_5.png'} layout='fill' alt='image'/>    
               </div>              
-            </TabPane>
+            </TabPane> */}
           </Tabs>
         </div>
       </div>      
@@ -68,4 +71,4 @@ const Recently = (props:any) => {
   )
 }
 
-export default Recently
+export default MarketPlace
