@@ -42,7 +42,7 @@ const tab_bundles =
             <Image src="/assets/img/tab-bundle.png" width={24} height={24} alt="image"/>
             <div className='ml-2 hidden md:block'>PokeBoxes</div>
           </div>
-const MarketPlace = (props:any) => {
+const Marketplace = (props:any) => {
   return (
     <>      
       <div className="min-w-[100vw] bg-[#242735]" style={{overflowY:'hidden'}}>
@@ -71,4 +71,4 @@ const MarketPlace = (props:any) => {
   )
 }
 
-export default MarketPlace
+export default Marketplace

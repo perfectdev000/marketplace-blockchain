@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Tabs, { TabPane } from 'rc-tabs'
 import Dashboard from '../components/dashboard/dashboard'
-import Marketplace from '../components/marketplace/Marketplace'
+import Marketplace from '../components/marketplace'
 import Link from 'next/link'
 import React, {useState} from 'react'
 
